@@ -11,10 +11,20 @@ public class PurdueChallange2 {
 	
 	public static boolean compareCurrency(int dol)
 	{
-		//calculate current system sum 
-		int hundred = 100 % dol;
+		boolean moreEfficent = true;
+		int hundred;
+		if(dol > 100)
+			{
+			hundred = dol % 100;
+			}
+		else
+			{	
+			hundred = 100 / dol;
+			}
 		System.out.println(hundred);
-		return false;
+		
+		
+		return moreEfficent;
 	}
 
 }
